@@ -22,12 +22,13 @@ GuessNumBtn.onclick = function () {
             attempt++;
 
             if (guessedNumber < Answer) {
-                Hint.textContent = "This number is Higher than the number you are guessing.";
+                Hint.textContent = "The number you guessed is too low, try again.";
             } else if (guessedNumber > Answer) {
-                Hint.textContent = "This number is Lower than the number you are guessing.";
+                Hint.textContent = "The number you guessed is too high, try again.";
             } else {
                 guessing = false;
                 victoryMessage.style.display = "block";
+                Hint.textContent = "YOU GOT IT RIGHT! " + Answer + " is the number you have been trying to guess since forever." ;
                 AnswerNum.textContent = `AT LAST, YOU ARE CORRECT! ${Answer} is the correct number. It took you ${attempt} attempts.`;
             }
         }
