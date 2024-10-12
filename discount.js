@@ -22,9 +22,9 @@ GuessNumBtn.onclick = function () {
             attempt++;
 
             if (guessedNumber < Answer) {
-                Hint.textContent = "This number is Lower than the number you are guessing.";
-            } else if (guessedNumber > Answer) {
                 Hint.textContent = "This number is Higher than the number you are guessing.";
+            } else if (guessedNumber > Answer) {
+                Hint.textContent = "This number is Lower than the number you are guessing.";
             } else {
                 guessing = false;
                 victoryMessage.style.display = "block";
