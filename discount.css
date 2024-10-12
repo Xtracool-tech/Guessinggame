@@ -1,0 +1,108 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ff6a00;
+}
+
+input{
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-top: .25rem;
+    font-size: 20px;
+}
+
+input[type="number"] {
+    width: 80%;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 1.5em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+input[type="number"]:focus {
+    box-shadow: 0 0 15px #ff6a00;
+    padding: 15px 30px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    background-color: #ff6a00;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 1rem;
+}
+
+.Ulike{
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: #ffa041;
+}
+
+#feedback {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+#attempts {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Victory Animation */
+@keyframes celebrate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+#victory {
+    font-size: 3em;
+    color: #4CAF50;
+    animation: celebrate 0.5s infinite;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    input[type="number"] {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    button {
+        width: 50%;
+        padding: 15px;
+        font-size: 1.2em;
+    }
+
+    #feedback {
+        font-size: 1.5em;
+    }
+}
