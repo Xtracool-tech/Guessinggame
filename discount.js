@@ -28,7 +28,7 @@ GuessNumBtn.onclick = function () {
             } else {
                 guessing = false;
                 victoryMessage.style.display = "block";
-                Hint.textContent.style.color = "green";
+                
                 Hint.textContent = "YOU GOT IT RIGHT! " + Answer + " is the number you have been trying to guess since forever." ;
                   Hint.style.color = "green";
                 AnswerNum.textContent = `AT LAST, YOU ARE CORRECT! ${Answer} is the correct number. It took you ${attempt} attempts.`;
